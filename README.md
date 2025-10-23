@@ -34,3 +34,27 @@ Unstructured => for example audio files or images, piece of Text
 - the switch from sigmoid funtion to railer funciton
 ![alt text](image-4.png)
 - so algorithms cane change the speed of the code and computation so it will can run much faster 
+# Graded Test to check if i understood those things
+ChecK
+# Binary classification
+# Logistic Regresssion
+-   for example  1(cat) vs 0 (no Cat) so binary
+- Image example what happens under the hood
+    -putting for an image all colors so red blue green into a vector then if we have an image for 64x64 pixels it would look like this
+    ![alt text](image-5.png)
+maths = (x,y) 
+where x is an x dimensional feature vector
+and y the label is either 0 or 1 
+![alt text](image-6.png)
+training examples = (x(1),y(1)),(x(2),y(2)),(x(m),y(m))
+where xm is the last training example
+M = Mtrain
+
+M test(subscript) = number of test examples
+
+![alt text](image-8.png)
+
+Put those x(1) ,x(2) into a Matrix
+So Matrix X where M is the number of training examples and the height of this Matrix is NX or called railroads
+
+![alt text](image-7.png)
