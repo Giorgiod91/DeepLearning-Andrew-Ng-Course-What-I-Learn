@@ -25,4 +25,12 @@ the middle ones are called hidden layer
 # Structured and Unstructured Data
 - Structured like a Table with conenctions
 
-Unstructured => for example audio files
+Unstructured => for example audio files or images, piece of Text
+
+# Learning progress
+- what is effecting the Progress
+-![alt text](image-3.png)
+- scaled data
+- the switch from sigmoid funtion to railer funciton
+![alt text](image-4.png)
+- so algorithms cane change the speed of the code and computation so it will can run much faster 
