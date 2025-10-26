@@ -104,5 +104,5 @@ then sigmoid of z comes very close to zero
 
   ![alt text](image-9.png)
 
-- so if y= 1 we want y hat to be large and if y=0 we want y hat to be small and the y hat is the formual y^​=σ(wTx+b) so we change the parameters to archiev this
+- so if y= 1 we want y hat to be large and if y=0 we want y hat to be small and the y hat is the formual y^​=σ(wTx+b) so we change the parameters to archiev this (parameter = w and b)
   # Cost function
