@@ -69,3 +69,40 @@ So Matrix X where M is the number of training examples and the height of this Ma
 # x.shape
 
 . python command for finding the shape of the matrix
+
+# y.shape
+
+# Logistic regression
+
+- Given x , want Y^=P(y=1/x)
+- X is an X dimensional vector
+  Parameters : W also and X dimensional vector
+  and b which is just a real number
+  Output Y^ =
+
+# sigmoiod function
+
+![](2025-10-26-11-17-30.png)!
+
+Case 1-----> if z is large == then e to the nefative z will be close to 0
+that also means if z is very large then sigmoid of z is very close to 1
+Case 2-----> if z is very small or a verz large negative number
+then sigmoid of z comes very close to zero
+
+# what that all means
+
+- we want to predict something that has only 2 outcomes (0 or 1)
+- to make these prediction using two things the parameters (W,B)
+- W → weights (how important each feature is)
+- B → bias (a number to adjust the prediction)
+  ====> so the goal is We want our model to correctly predict the probability that the answer is 1 (true).
+  and this is done by tuning W and B
+
+  # Loss(error) function
+
+  ![](2025-10-26-11-37-28.png)
+
+  ![alt text](image-9.png)
+
+- so if y= 1 we want y hat to be large and if y=0 we want y hat to be small and the y hat is the formual y^​=σ(wTx+b) so we change the parameters to archiev this
+  # Cost function
