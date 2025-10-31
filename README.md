@@ -1,4 +1,5 @@
 # DeepLearning-Andrew-Ng-Course-What-I-Learn
+# Goal ---  Understand the Math behind ML 
 
 Neural Network Basic
 
