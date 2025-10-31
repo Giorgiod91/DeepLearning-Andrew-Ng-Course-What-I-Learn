@@ -105,4 +105,15 @@ then sigmoid of z comes very close to zero
   ![alt text](image-9.png)
 
 - so if y= 1 we want y hat to be large and if y=0 we want y hat to be small and the y hat is the formual y^​=σ(wTx+b) so we change the parameters to archiev this (parameter = w and b)
+
   # Cost function
+
+J(w,b) = 1/m
+![alt text](image-10.png)
+
+# Rules
+
+- the Loss function will be used on a single training example
+  ![alt text](image-11.png)
+- the cost function will be applied to the entire training set
+  J(w,b) ![alt text](image-12.png)
