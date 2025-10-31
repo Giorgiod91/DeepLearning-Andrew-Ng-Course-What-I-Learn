@@ -140,7 +140,38 @@ J(w,b) = 1/m
 - w:= w-alpha dJ(w,b)/dw
 - b:= b-alpha dJ(w,b)/db
 
-# Calculus Tip
+# Calculus Tips
 
 - partial derivative symbol will be used instead of lower case d if the function J has 2 or more parameters
   ![alt text](image-16.png)
+
+- The derivative is the slope — it shows how much
+  𝑓(𝑥) changes when x changes a little.
+  ![alt text](image-17.png)
+
+- rule for
+  ![](image-18.png)
+- If a goes up a little, a² goes up about 2a times as much
+  ![alt text](image-19.png)
+- examples
+  ![alt text](image-20.png)
+
+-chain rule
+![alt text](image-21.png)
+
+- here was dj/dv =3 and dv/da = 1 so dj/da = 3
+
+- backpropagation
+  ![alt text](image-22.png)
+- what has been done here ===> go backward and figured out that dv = 3 (dj/dw)
+  da = 3 dj/da
+  ![alt text](image-23.png)
+- another example here if we want to find out dj/db
+  ![alt text](image-25.png)
+
+# Gradient Descent in Logitic Regression
+
+![](image-26.png)
+
+- goal here is to check how L changes it we switch up w1, w2, or b by a bit
+- the chain rule dl/dz = dl/da \* da/dz
