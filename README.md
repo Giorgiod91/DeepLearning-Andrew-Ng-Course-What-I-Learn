@@ -116,4 +116,31 @@ J(w,b) = 1/m
 - the Loss function will be used on a single training example
   ![alt text](image-11.png)
 - the cost function will be applied to the entire training set
-  J(w,b) ![alt text](image-12.png)
+  J(w,b) = ![alt text](image-12.png)
+
+# Math extra
+
+- how does a convex function look
+  ![alt text](image-13.png)
+
+- how does a non convex function look
+
+![alt text](image-14.png)
+
+# Gradient Decent
+
+- initalizing w and b
+- it will goe downhill in the direction of steepest decent from the initalizet value
+
+![alt text](image-15.png)
+
+- w = w- alpha(thats the learning rate it will control how big the steps are on eacdh iteration of gradient decent) dJ(w) / dw
+- this will be repeated und the algorithm converged or in other word if the algo stops if it doesnt change much anymore
+- this is with only b as a parameter but J(w,b) has two then it would look like this
+- w:= w-alpha dJ(w,b)/dw
+- b:= b-alpha dJ(w,b)/db
+
+# Calculus Tip
+
+- partial derivative symbol will be used instead of lower case d if the function J has 2 or more parameters
+  ![alt text](image-16.png)
