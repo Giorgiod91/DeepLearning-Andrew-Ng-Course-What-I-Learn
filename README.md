@@ -91,6 +91,9 @@ that also means if z is very large then sigmoid of z is very close to 1
 Case 2-----> if z is very small or a verz large negative number
 then sigmoid of z comes very close to zero
 
+- in python s = 1 / (1 +math.exp(-x)) but thats bat practice using math function
+- better to use s = 1/(1+ np.exp(-x))
+
 # what that all means
 
 - we want to predict something that has only 2 outcomes (0 or 1)
@@ -101,6 +104,10 @@ then sigmoid of z comes very close to zero
   and this is done by tuning W and B
 
   # Loss(error) function
+
+  - The loss is used to evaluate the performance of your model. The bigger your loss is, the more different your predictions ( 𝑦̂
+    ) are from the true values ( 𝑦
+    ). In deep learning, you use optimization algorithms like Gradient Descent to train your model and to minimize the cost.
 
   ![](2025-10-26-11-37-28.png)
 
@@ -234,3 +241,10 @@ J(w,b) = 1/m
 
 - so python will fill out
   ![](image-36.png)
+
+# Logistic Regression Cost Function
+
+- by misimize the Cost function J(w,b)
+- MLE Maximum Likelihood Estimation
+
+![alt text](image-38.png)

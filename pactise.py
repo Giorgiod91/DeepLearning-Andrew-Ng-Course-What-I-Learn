@@ -9,3 +9,11 @@ print(cal)
 # dividing the matrix a by the 1 by 4 matrix
 percentage = 100*A/cal.reshape(1,4)
 print(percentage)
+
+
+
+
+
+a= np.array([[2,1],[1,3]])
+c = a*a 
+print(c)
