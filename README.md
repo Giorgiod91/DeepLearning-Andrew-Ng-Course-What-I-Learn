@@ -175,3 +175,34 @@ J(w,b) = 1/m
 
 - goal here is to check how L changes it we switch up w1, w2, or b by a bit
 - the chain rule dl/dz = dl/da \* da/dz
+
+- last step in this example is to check how much we need to change w and b
+  ![alt text](image-27.png)
+
+# Implement Logistic Regression
+
+- using a For Loop
+- This example only has 2 features, but with a larger training set or more features, using Python loops would become much slower, while vectorized operations would still scale efficiently.
+- cause the training data becomes bigger and bigger so in deep learning it became really important to get rid of the for loops and use vectorization
+  ![alt text](image-28.png)
+
+# Deeper explanation of the Derivation of dl/dz
+
+- https://community.deeplearning.ai/t/derivation-of-dl-dz/165?_gl=1*15es6ec*_ga*MjA4MjY4MzY1NS4xNzYwOTAzOTU1*_ga_FR2MZ1VLMS*czE3NjIwMDEwODAkbzQkZzEkdDE3NjIwMDIzODgkajYwJGwwJGgw
+
+# Neural Network programming guideline
+
+- Whenever possible avoid explicit for loop
+
+# Vectorization
+
+- just an example how much faster the code runs in python with Vectorization
+- np.dot()
+  ![alt text](image-29.png)
+
+- here how it would look in python with foor loop and with build in function from numpy vectorization
+- goal is to use an inbuild function whenever its possible
+  ![alt text](image-30.png)
+
+- in the example from before we now remove one for loop and use a vector instead of the 2 initialized values dw1 and dw2
+  ![alt text](image-31.png)
