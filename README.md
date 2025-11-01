@@ -1,5 +1,6 @@
 # DeepLearning-Andrew-Ng-Course-What-I-Learn
-# Goal ---  Understand the Math behind ML 
+
+# Goal --- Understand the Math behind ML
 
 Neural Network Basic
 
@@ -207,3 +208,24 @@ J(w,b) = 1/m
 
 - in the example from before we now remove one for loop and use a vector instead of the 2 initialized values dw1 and dw2
   ![alt text](image-31.png)
+
+# Vecrotizing Logistic Regression
+
+- this example is for the Z
+- the simplified numpy command for this example is
+- Z = np.dot(w\*T,x) + b
+- this is called Broadcasting in python
+  ![alt text](image-32.png)
+
+- now the same for the a values
+- A = [a(1) a(2).... a(m)] = Sigmoid(Z)
+- sigmpid inputs the Z as a varaible
+
+![alt text](image-33.png)
+
+- here with just one line of code for each we can compute dz ,db and dw
+
+![alt text](image-34.png)
+
+- now compared with the for loop approach
+  ![alt text](image-35.png)
