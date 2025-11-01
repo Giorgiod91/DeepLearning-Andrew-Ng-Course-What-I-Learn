@@ -229,3 +229,8 @@ J(w,b) = 1/m
 
 - now compared with the for loop approach
   ![alt text](image-35.png)
+
+# Broadcasting in python
+
+- so python will fill out
+  ![](image-36.png)
