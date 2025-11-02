@@ -12,8 +12,3 @@ print(percentage)
 
 
 
-
-
-a= np.array([[2,1],[1,3]])
-c = a*a 
-print(c)

@@ -248,3 +248,22 @@ J(w,b) = 1/m
 - MLE Maximum Likelihood Estimation
 
 ![alt text](image-38.png)
+
+# Hints for me how to reshape image data
+
+- in ML each column should represent one training example this is why we here use Transpose
+
+![alt text](<Screenshot 2025-11-02 094325.png>)
+
+- next step would be to standardize
+  train_set_x = train_set_x_flatten / 255
+  test_set_x = test_set_x_flatten / 255  
+
+
+**What you need to remember:**
+
+Common steps for pre-processing a new dataset are:
+
+- Figure out the dimensions and shapes of the problem (m_train, m_test, num_px, ...)
+- Reshape the datasets such that each example is now a vector of size (num_px \* num_px \* 3, 1)
+- "Standardize" the data
