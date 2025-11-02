@@ -257,8 +257,7 @@ J(w,b) = 1/m
 
 - next step would be to standardize
   train_set_x = train_set_x_flatten / 255
-  test_set_x = test_set_x_flatten / 255  
-
+  test_set_x = test_set_x_flatten / 255
 
 **What you need to remember:**
 
@@ -267,3 +266,9 @@ Common steps for pre-processing a new dataset are:
 - Figure out the dimensions and shapes of the problem (m_train, m_test, num_px, ...)
 - Reshape the datasets such that each example is now a vector of size (num_px \* num_px \* 3, 1)
 - "Standardize" the data
+
+# Initalizing methods
+
+![alt text](image-39.png)
+
+# forward and backward propagation
