@@ -271,4 +271,16 @@ Common steps for pre-processing a new dataset are:
 
 ![alt text](image-39.png)
 
-# forward and backward propagation
+# Neural Network
+
+- we have 2 layers here in this example and also do the back propagation
+  DeepLearning-Andrew-Ng-Course-What-I-Learn
+  ![alt text](image-40.png)
+
+# Layers of a Neural Network
+
+- Input layer a[0] = x also called layer zero 0
+- Hidden Layer a[1] a 4d vector in this example also called layer 1
+  ![alt text](image-41.png) ![alt text](image-42.png)
+  the hidden layer parameter are w[1],b[1] where w(4,3) means 4 nodes in the hidden layer and 3 in the input layer for b(4,1)
+- Output Layer Yhat = a[2] also called layer 2 this output layer also have those parameter w[2] (1,4) again here hidden layer has 4 units and the output layer has just one unit,b[2]
