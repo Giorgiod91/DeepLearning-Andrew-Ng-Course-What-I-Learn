@@ -284,3 +284,34 @@ Common steps for pre-processing a new dataset are:
   ![alt text](image-41.png) ![alt text](image-42.png)
   the hidden layer parameter are w[1],b[1] where w(4,3) means 4 nodes in the hidden layer and 3 in the input layer for b(4,1)
 - Output Layer Yhat = a[2] also called layer 2 this output layer also have those parameter w[2] (1,4) again here hidden layer has 4 units and the output layer has just one unit,b[2]
+
+# Neural Network Representation
+
+- the circle actually represents two steps of computation as seen here
+  ![alt text](image-43.png)
+
+# Implementing Neural Network
+
+- instead of using a for loop we use these four equations and vectorize them
+- first multiply the w1[1]T matrix by the input features x
+  ![alt text](image-44.png)
+
+![alt text](image-45.png)
+
+# Vectorize across multiple examples
+
+- we then add the (i)as seen here
+  ![alt text](image-46.png)
+- stacking them up in columns so going from lowercase x to Uppercase X and so on
+  ![alt text](image-47.png)
+- this eliminates the for loop and we then can multipy with the matrixes isntead of doing them solo
+
+- here with 3 trainign examples
+  ![alt text](image-48.png)
+
+-recap here ( moving from handling one example at a time to handle all exmpales together in a big matrix operation)
+
+- so firs step is stack up training example then be capital X
+- second step is for each value of z,a stack up the columns into capital aswell
+- so the line Z[1] = W[1]X+b[1] allows to vectorize this line z[1](i) = W[1]x(i) +b(1)
+  ![alt text](image-51.png)
