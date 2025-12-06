@@ -315,3 +315,25 @@ Common steps for pre-processing a new dataset are:
 - second step is for each value of z,a stack up the columns into capital aswell
 - so the line Z[1] = W[1]X+b[1] allows to vectorize this line z[1](i) = W[1]x(i) +b(1)
   ![alt text](image-51.png)
+
+# Activation functions
+
+- tanh function outputs from -1 to 1 ( so its positive to negative)
+- the sigmoid function goes from 0 to 1 (so its allways positive) only really used for the output layer
+- tanh is almost allways better
+- relu function is currently the default choice for activation functions
+  ![alt text](image-52.png)
+- one thing to mention if z is negative then the derivative is 0
+
+![alt text](image-53.png)
+
+- linear activation function can be used for the output layer
+
+![alt text](image-54.png)
+
+# Initalize parameters
+
+- w[1] = np.random.rand((2,2)) \* 0.01 multiply by a very small number cause if the weights are too large the learning will be very slow
+- b[1] = np.zero((2,1))
+- w[2] = np.random.rand((1,2)) \* 0.01
+- b[2] = 0
