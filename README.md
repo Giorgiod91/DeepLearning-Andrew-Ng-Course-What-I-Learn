@@ -331,9 +331,10 @@ Common steps for pre-processing a new dataset are:
 
 ![alt text](image-54.png)
 
-# Initalize parameters
+# Initialize parameters
 
 - w[1] = np.random.rand((2,2)) \* 0.01 multiply by a very small number cause if the weights are too large the learning will be very slow
 - b[1] = np.zero((2,1))
 - w[2] = np.random.rand((1,2)) \* 0.01
 - b[2] = 0
+- => if we dont do this every layer would just use the same
