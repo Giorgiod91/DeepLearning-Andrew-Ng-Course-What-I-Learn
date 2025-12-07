@@ -358,3 +358,25 @@ Common steps for pre-processing a new dataset are:
 - the backward propagation has the input of da[l] and the output of da[l-1]
 
 ![alt text](image-60.png)
+
+# back and forward propagation steps
+
+- Z[1] and so on is the cached value
+- y hat is the output
+  ![alt text](image-61.png)
+- now we go backwards
+  ![alt text](image-62.png)
+
+- with all af the steps we get out the derivates dw[1] db[1] and so on
+  ![alt text](image-63.png)
+
+- so this is how we impelemtn the backward function
+  ![alt text](<Screenshot 2025-12-07 123856.png>)
+
+# Hyperparameters
+
+- learningrate alpha
+- iterations
+- hidden layer L
+- hidden units n[1], n[2], ....
+- choice of activation function
