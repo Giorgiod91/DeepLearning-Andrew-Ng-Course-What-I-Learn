@@ -333,8 +333,28 @@ Common steps for pre-processing a new dataset are:
 
 # Initialize parameters
 
-- w[1] = np.random.rand((2,2)) \* 0.01 multiply by a very small number cause if the weights are too large the learning will be very slow
+- w[1] = np.random.randn((2,2)) \* 0.01 multiply by a very small number cause if the weights are too large the learning will be very slow
 - b[1] = np.zero((2,1))
-- w[2] = np.random.rand((1,2)) \* 0.01
+- w[2] = np.random.randn((1,2)) \* 0.01
 - b[2] = 0
 - => if we dont do this every layer would just use the same
+
+# forward propagation in a deep network
+
+- for example the activation of layer 2 we multiply with the output of layer 1
+- Z[2] = W[2] \* a[1] + b[2]
+  ![alt text](image-55.png)
+
+- the genreral forward propagation function ist called
+  ![alt text](image-56.png)
+
+- So the forward propagation has input of a[l-1] and the output a[l]
+- ![alt text](image-57.png)
+
+![alt text](image-58.png)
+
+# backward propagation step
+
+- the backward propagation has the input of da[l] and the output of da[l-1]
+
+![alt text](image-60.png)
